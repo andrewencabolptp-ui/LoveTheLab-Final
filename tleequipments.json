@@ -1,0 +1,443 @@
+[
+  {
+    "title": "Electric Stove",
+    "description": "A cooking appliance powered by electricity, used to prepare food by providing heat. It is commonly found in households and comes in various styles like coil, glass-top, or induction. It is efficient and easy to use for different cooking tasks.",
+    "image": "./images/tlelab/electric stove.png",
+    "howtouse": "1. Press the power button or turn the setting knob to the 'on' position.<br>2. Select the desired temperature level; some electric stoves have numerical settings, while others use low, medium, and high.<br>3. Adjust the temperature according to the type of dish you will be cooking.",
+    "cautions": "Ensure the stove is properly installed and regularly maintained.",
+    "history": "The electric stove became common in homes in the late 19th and early 20th centuries.",
+    "category": "Heating/Cooling Equipment"
+  },
+  {
+    "title": "Non-stick Wok Pan",
+    "description": "A pan with a special coating that prevents food from sticking to its surface. It is perfect for stir-frying or cooking with minimal oil. This pan is easy to clean and helps achieve smooth, even cooking.",
+    "image": "./images/tlelab/nonstick pan.png",
+    "howtouse": "1. Cook on low to medium heat when using a non-stick wok.<br>2. Avoid high heat, as it can degrade the non-stick coating over time.<br>3. Use wooden or silicone utensils to avoid damaging the coating.",
+    "cautions": "Use wooden or silicone utensils to avoid damaging the non-stick coating.",
+    "history": "The wok originated in China and has been used for centuries. Non-stick coatings became popular in the 20th century to make cooking and cleaning easier.",
+    "category": "Cookware"
+  },
+  {
+    "title": "Oven Toaster",
+    "description": "A compact appliance ideal for toasting, baking, and reheating small portions of food. It heats up quickly and is energy-efficient compared to a full-sized oven. Perfect for quick meals or snacks, it is a kitchen essential.",
+    "image": "./images/tlelab/oven toaster.png",
+    "howtouse": "1. Plug the toaster oven into an outlet. <br>2. Turn the ON/OFF Control Dial to 450°F.<br>3. Heat at this temperature for 10 minutes. <br>4. The odor should not be present after this initial preheating.",
+    "cautions": "Never place items that are too large or that can overheat inside.",
+    "history": "The toaster oven was invented in the 1900s, providing an efficient method for toasting bread and baking small items.",
+    "category": "Heating/Cooling Equipment"
+  },
+  {
+    "title": "Portable Gas Stove",
+    "description": "A small, lightweight stove that uses portable gas canisters for fuel. It is often used for outdoor cooking or camping trips. Its compact design makes it easy to carry and set up.",
+    "image": "./images/tlelab/portable gas stove.png",
+    "howtouse": "1. Ensure the dial is in the off position.<br>2. Open the Butane Cartridge Compartment.<br>3. Locate the latch stove and line it up with the divot on the canister.<br>4. Close the Butane Cartridge Compartment and press down on the lock lever.<br>5. Turn the dial clockwise until you hear a 'click'.",
+    "cautions": "Always ensure the gas supply is properly connected and that no leaks are present.",
+    "history": "Portable gas stoves became widely used in the mid-20th century for camping and small kitchens, providing a compact cooking solution with easy-to-use gas fuel.",
+    "category": "Heating/Cooling Equipment"
+  },
+  {
+    "title": "Round-bottom Cooking Pan",
+    "description": "A round-bottomed, versatile pan commonly used in Asian cooking for stir-frying, steaming, or deep-frying. Its shape ensures even heat distribution for quick cooking. It is a favorite tool for making flavorful dishes.",
+    "image": "./images/tlelab/round bottom cooking pan.png",
+    "howtouse": "1. Set up at least two burners of varying heat. Let the wok preheat for about 10 minutes.<br>2. Apply oil after preheating your wok.<br>3. Keep your food moving in the pan constantly to prevent burning.",
+    "cautions": "Ensure the pan is stable on your stove to prevent tipping.",
+    "history": "Round-bottom pans, such as woks, have been used in Asia for centuries for stir-frying, steaming, and braising.",
+    "category": "Cookware"
+  },
+  {
+    "title": "Saucepan",
+    "description": "A small, deep pan with a long handle and a lid, used for boiling or simmering liquids. It is perfect for making soups, sauces, and gravies. The lid helps retain heat and moisture for efficient cooking.",
+    "image": "./images/tlelab/saucepan.png",
+    "howtouse": "1. Use the right heat setting for your saucepan. High heat is ideal for boiling water, while low heat is suitable for simmering sauces.<br>2. Always use a lid when simmering to prevent splattering.",
+    "cautions": "Always use a lid when simmering to prevent splattering.",
+    "history": "The saucepan has been in use since the 17th century and is a staple in European and American kitchens for boiling, simmering, and making sauces.",
+    "category": "Cookware"
+  },
+  {
+    "title": "Steamer",
+    "description": "A kitchen tool designed to cook food by steaming, preserving its nutrients and natural flavors. It often consists of stacked trays or baskets that allow steam to circulate. It is ideal for healthy cooking.",
+    "image": "./images/tlelab/steamer.png",
+    "howtouse": "1. Place your dish into the steamer and cover it with a lid.<br>2. Set a timer and check the temperature. A steady stream of steam should be visible. Adjust the heat as necessary.",
+    "cautions": "Be cautious of hot steam when opening the lid.",
+    "history": "Steam cooking dates back to ancient China and Japan, where steamers were used for cooking delicate foods like dumplings, buns, and fish.",
+    "category": "Cookware"
+  },
+  {
+    "title": "Food Chopper",
+    "description": "A kitchen tool used for finely chopping ingredients like vegetables, nuts, or herbs. It saves time and ensures consistent cuts for even cooking. Some models are manual, while others are electric.",
+    "image": "./images/tlelab/food chopper.png",
+    "howtouse": "1. Press the 'pulse' button for optimal control over ingredients. <br>2. A drizzle basin is located on top of the lid for adding liquid ingredients for dressings or sauces.",
+    "cautions": "Keep hands clear of the chopping blade.",
+    "history": "The food chopper became popular in the 19th century as a time-saving tool for chopping vegetables and meat.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Egg Molder",
+    "description": "A utensil used to shape cooked eggs into fun or decorative forms. It is commonly used in bento box presentations or creative plating. This tool makes mealtime more enjoyable, especially for kids.",
+    "image": "./images/tlelab/egg molder.png",
+    "howtouse": "1. Heat a flat iron to medium heat and place the egg rings on the surface.<br>2. Allow the egg rings to preheat, then either mix your eggs before pouring or crack one egg into each ring.",
+    "cautions": "Ensure the egg molder is clean and dry before use to avoid contamination.",
+    "history": "The egg molder has been used for shaping boiled eggs for decorative or uniform purposes, popularized in Japanese cuisine and other East Asian countries.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Dough Cutter",
+    "description": "A flat, handled tool used for dividing or scraping dough during baking preparation. It also helps clean and smooth work surfaces. Bakers often use it to handle sticky dough more efficiently.",
+    "image": "./images/tlelab/dough cutter.png",
+    "howtouse": "1. Use the fine edge to pick up traces of dough on surfaces.<br>2. Also use it to knead dough without getting your hands messy.",
+    "cautions": "Always use on a flat, stable surface to prevent injury or uneven cuts.",
+    "history": "The dough cutter dates back centuries, used by bakers for dividing and shaping dough.",
+    "category": "Baking Tools"
+  },
+  {
+    "title": "Dumpling Molder",
+    "description": "A handy tool for folding and sealing dumplings quickly and uniformly. It simplifies the process of making dumplings, wontons, or empanadas. Perfect for beginners, it ensures professional-looking results.",
+    "image": "./images/tlelab/dumpling molder.png",
+    "howtouse": "1. Put the dough on the surface, add your filling to the dough, then close the mold and press to seal a perfect package.",
+    "cautions": "Clean thoroughly after every use to avoid leftover dough or filling from sticking, which can lead to bacteria growth.",
+    "history": "Dumpling molders became widespread in various cultures to help form uniform shapes.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Chopping Board",
+    "description": "Used as a protective surface on which to cut or slice food. Cutting boards are often made of wood, plastic, or cork. Glass cutting boards are also available, and though easy to clean, may dull or damage a knife during use.",
+    "image": "./images/tlelab/chopping board.png",
+    "howtouse": "1. Lay the chopping board on a flat, stable surface.<br>2. Place food on the board, using a sharp knife to chop while keeping the knife tip on or just above the board.",
+    "cautions": "Always use a separate board for raw meat and vegetables to avoid cross-contamination.",
+    "history": "The chopping board has been used since ancient times.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Citrus Reamer",
+    "description": "A cone-shaped tool used to extract juice from lemons, oranges, or other citrus fruits. It efficiently separates juice from seeds and pulp. This tool makes preparing fresh juices or marinades easier.",
+    "image": "./images/tlelab/citrus reamer.png",
+    "howtouse": "1. Hold half a citrus fruit in one hand and the reamer in the other.<br>2. Push the reamer into the center of the fruit and start gently twisting.",
+    "cautions": "Avoid applying excessive force to prevent injury.",
+    "history": "The citrus reamer, developed in the 19th century, was designed to extract juice from fruits like lemons, oranges, and limes.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Colander/Pasta Strainer",
+    "description": "A perforated bowl used to drain liquids from cooked pasta, vegetables, or washed produce. It is typically made of metal or plastic and has a sturdy base.",
+    "image": "./images/tlelab/colander pasta strainer.png",
+    "howtouse": "1. Place the colander in the sink, then pour contents from the pot into the colander to drain liquid.<br>2. Use caution when handling hot liquids.",
+    "cautions": "Be cautious when handling hot liquids and ensure the colander is stable while straining.",
+    "history": "Colanders date back to Ancient Rome and Greece, where they were used to drain liquids from food.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Cheese Grater",
+    "description": "A tool with sharp surfaces for shredding, grating, or slicing ingredients like cheese, vegetables, or chocolate. It often has multiple sides for different textures.",
+    "image": "./images/tlelab/cheese grater.png",
+    "howtouse": "1. Hold the handle of the grater near you and grate cheese away from you.<br>2. The grated cheese will be collected in the container below the grater.",
+    "cautions": "Use care when grating cheese to avoid injury.",
+    "history": "Graters became popular in the 16th century as people sought ways to shred cheese more efficiently.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "French Knife",
+    "description": "A multipurpose kitchen knife used for slicing, dicing, chopping, and mincing. It is sharp, durable, and a favorite among chefs for its versatility.",
+    "image": "./images/tlelab/french knife.png",
+    "howtouse": "1. Keep fingertips curled under the hand that is holding the food.<br>2. Point the blade away from your body when cutting.",
+    "cautions": "Always use a sharp knife to reduce the risk of accidents.",
+    "history": "The French knife, also known as a chef's knife, originated in France and is a versatile kitchen tool.",
+    "category": "Cutlery"
+  },
+  {
+    "title": "Mixing Bowl",
+    "description": "A deep, round bowl used for mixing or blending ingredients during food preparation. It is a versatile kitchen staple.",
+    "image": "./images/tlelab/mixing bowl.png",
+    "howtouse": "1. Use the mixing bowl for combining ingredients or whipping cream.<br>2. Some multifunctional bowls have lids for food storage.",
+    "cautions": "Avoid using very hot liquids or acidic substances in plastic bowls.",
+    "history": "Mixing bowls have been used since the Middle Ages, evolving from simple pottery and wood to glass and plastic.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Peeler",
+    "description": "A handheld tool used to remove the skin from fruits and vegetables. Its sharp blade makes peeling quick and efficient.",
+    "image": "./images/tlelab/peeler.png",
+    "howtouse": "1. Hold the peeler in your dominant hand, with the blade facing away. <br>2. Apply gentle pressure and glide the peeler down the surface of the produce.",
+    "cautions": "Always peel away from your hands to avoid injury.",
+    "history": "The peeler, patented in the early 19th century, revolutionized the way people prepared fruits and vegetables.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Strainer",
+    "description": "A fine mesh tool used to separate liquids from solids or sift dry ingredients like flour.",
+    "image": "./images/tlelab/strainer.png",
+    "howtouse": "1. Place the strainer over a large bowl, then pour liquid through to separate solids. <br>2. Ensure a good grip to prevent spills.",
+    "cautions": "Strainers with fine mesh may clog easily.",
+    "history": "Strainers were used by cooks in ancient civilizations to separate solids from liquids.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Rotary Egg Beater",
+    "description": "A handheld tool with rotating blades used to beat eggs or blend ingredients manually.",
+    "image": "./images/tlelab/rotary egg beater.png",
+    "howtouse": "1. Place the egg beater in a bowl containing eggs and crank the handle.<br>2. Continue until eggs reach desired fluffiness.",
+    "cautions": "Be careful of moving parts and sharp edges.",
+    "history": "The rotary egg beater was invented in the late 19th century, increasing efficiency in mixing eggs.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Liquid Measuring Cup",
+    "description": "A cup with markings for accurately measuring liquid ingredients.",
+    "image": "./images/tlelab/liquid measuring cup.png",
+    "howtouse": "1. Bend down to eye level with the measuring cup. <br>2. Pour liquid while observing the level for accuracy.",
+    "cautions": "Ensure the measuring cup is on a flat surface for accurate measurement.",
+    "history": "Liquid measuring cups emerged in the 19th century as the need for accurate measurements grew.",
+    "category": "Measuring Tools"
+  },
+  {
+    "title": "Manual Kitchen Weighing Scale",
+    "description": "A device used to weigh ingredients for precise measurement in cooking and baking.",
+    "image": "./images/tlelab/manual kitchen weighing scale.png",
+    "howtouse": "1. Adjust the balance until the arrow is level to read the weight.<br>2. Add the ingredient to the platform for measurement.",
+    "cautions": "Ensure the scale is properly calibrated for accuracy.",
+    "history": "Manual kitchen scales have been used since the 18th century, especially for baking.",
+    "category": "Measuring Tools"
+  },
+  {
+    "title": "Metric-Style Measuring Cup",
+    "description": "Small scoops used for measuring liquid or dry ingredients in specific quantities.",
+    "image": "./images/tlelab/metric style measuring cup.png",
+    "howtouse": "1. Pour ingredients into the cup until level with the graduation mark. <br>2. Ensure you are at eye level for an accurate measurement.",
+    "cautions": "Use the correct measuring cup for dry or liquid ingredients.",
+    "history": "Metric measuring cups became standardized in the 19th century.",
+    "category": "Measuring Tools"
+  },
+  {
+    "title": "Ice Cream Scooper/Dipper",
+    "description": "A tool designed for serving uniform scoops of ice cream or soft foods.",
+    "image": "./images/tlelab/ice cream scooper.png",
+    "howtouse": "1. Wash hands before using the ice cream scoop.<br>2. Use the handle to scoop and serve ice cream portions.",
+    "cautions": "Be careful, as the scooper can be sharp.",
+    "history": "The ice cream scooper was invented in the 19th century to make serving ice cream neater.",
+    "category": "Kitchen Tools"
+  },
+  {
+    "title": "Kitchen Shears",
+    "description": "Heavy-duty scissors used for cutting herbs, poultry, or food packaging.",
+    "image": "./images/tlelab/kitchen shears.png",
+    "howtouse": "1. Hold the kitchen shears with one hand and use pressing motions to cut.<br>2. Always cut away from your body.",
+    "cautions": "These scissors are sharp; keep them away from children.",
+    "history": "Kitchen shears have ancient origins, with modern designs evolving to handle various tasks in the kitchen.",
+    "category": "Kitchen Tools"
+  },
+  {
+    "title": "Manual Food Chopper",
+    "description": "A versatile kitchen appliance for chopping, slicing, dicing, and shredding ingredients quickly.",
+    "image": "./images/tlelab/manual food chopper.png",
+    "howtouse": "1. Place ingredients in the container, secure the lid, and pull the string to chop.<br>2. Detachable parts make cleaning easy.",
+    "cautions": "Keep fingers away from the chopping mechanism.",
+    "history": "Popularized in the 19th and 20th centuries, manual food choppers simplified vegetable preparation.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Silicone Brush",
+    "description": "A heat-resistant brush with flexible silicone bristles, used for spreading or basting sauces.",
+    "image": "./images/tlelab/silicone brush.png",
+    "howtouse": "1. Use it for applying oil or sauces while cooking.<br>2. It's also great for basting in the oven or on the grill.",
+    "cautions": "Ensure the brush is food-grade and heat-resistant.",
+    "history": "Silicone brushes were developed as durable alternatives to traditional bristle brushes in the late 20th century.",
+    "category": "Kitchen Tools"
+  },
+  {
+    "title": "Digital Kitchen Scale",
+    "description": "A compact device for measuring ingredients accurately by weight.",
+    "image": "./images/tlelab/digital kitchen scale.png",
+    "howtouse": "1. Place the container on the scale and tare it to zero before adding ingredients.<br>2. Ensure the scale is on a flat surface.",
+    "cautions": "Always check the batteries and calibrate for accurate measurements.",
+    "history": "Digital kitchen scales emerged in the late 20th century, replacing mechanical scales.",
+    "category": "Measuring Tools"
+  },
+  {
+    "title": "Egg Slicer",
+    "description": "A tool used to evenly slice boiled eggs into thin, uniform pieces.",
+    "image": "./images/tlelab/egg slicer.png",
+    "howtouse": "1. Open the slicer and place the boiled egg in the holder.<br>2. Close the lid to slice through the egg.",
+    "cautions": "The blades are sharp; handle with care.",
+    "history": "The egg slicer became popular in the 1960s for its ability to slice hard-boiled eggs uniformly.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Garlic Press",
+    "description": "A small handheld tool used to crush garlic cloves into a fine paste.",
+    "image": "./images/tlelab/garlic press.png",
+    "howtouse": "1. Place the garlic clove in the chamber and squeeze the handle to crush.<br>2. Scrape away excess garlic from the grid.",
+    "cautions": "Be mindful of the pressure applied to avoid breaking the tool.",
+    "history": "The garlic press was invented in the late 19th century to simplify the task of mincing garlic.",
+    "category": "Kitchen Tools"
+  },
+  {
+    "title": "Llanera",
+    "description": "A smooth, heat-resistant mold used for making Filipino desserts like leche flan.",
+    "image": "./images/tlelab/llanera.png",
+    "howtouse": "1. Heat sugar in the llanera until melted and caramelized.<br>2. Set aside to cool before adding custard mixture.",
+    "cautions": "Avoid overfilling to prevent spillage when steaming. The mold gets very hot.",
+    "history": "Llanera is a traditional mold used in Filipino cuisine, especially for leche flan, tracing its roots back to Spanish influence.",
+    "category": "Baking Tools"
+  },
+  {
+    "title": "Polvoron Molder",
+    "description": "A small tool for shaping polvoron, a Filipino powdered milk candy.",
+    "image": "./images/tlelab/polvoron molder.png",
+    "howtouse": "1. Scoop the mixture into the molder, press to shape, and wrap tightly in pre-cut paper.",
+    "cautions": "Handle with care; small parts may break or crack under pressure.",
+    "history": "The polvoron molder is rooted in Spanish and Filipino cultures, facilitating the creation of uniform treats.",
+    "category": "Food Preparation"
+  },
+  {
+    "title": "Tube Pan",
+    "description": "A round baking pan with a hollow tube in the center, used for baking cakes like angel food or Bundt cakes.",
+    "image": "./images/tlelab/tube pan.png",
+    "howtouse": "1. Prepare the batter, pour into the pan and bake according to recipe instructions.<br>2. Let cool before removing.",
+    "cautions": "Be cautious when removing from the oven, as the tube pan retains heat longer.",
+    "history": "Tube pans were introduced in the 19th century, gaining popularity for baking angel food and chiffon cakes.",
+    "category": "Baking Tools"
+  },
+  {
+    "title": "Tong",
+    "description": "A gripping tool used for lifting, flipping, or serving food during cooking.",
+    "image": "./images/tlelab/tong.png",
+    "howtouse": "1. Use tongs to handle hot food safely, gripping the item securely with the tips.<br>2. Turn food in a pan or serve directly onto plates.",
+    "cautions": "Be careful of hot surfaces and foods when using tongs.",
+    "history": "Tongs date back to the Roman Empire, having evolved in design for various culinary applications.",
+    "category": "Kitchen Tools"
+  },
+  {
+    "title": "Whisk",
+    "description": "A handheld tool with loops of wire used for mixing or whipping ingredients.",
+    "image": "./images/tlelab/whisk.png",
+    "howtouse": "1. Use a side-to-side motion to agitate the mixture while whisking.<br>2. Continue until the desired texture is achieved.",
+    "cautions": "Be careful, as wire loops can be sharp.",
+    "history": "Whisks have been used since the 16th century, originally made from twigs and evolving into metal designs.",
+    "category": "Kitchen Tools"
+  },
+  {
+    "title": "Saucer",
+    "description": "A small, flat dish placed under a cup to catch drips or hold a spoon.",
+    "image": "./images/tlelab/saucer.png",
+    "howtouse": "1. Place the saucer underneath a mug or cup for catching spills.",
+    "cautions": "Ensure the saucer is on a stable surface to avoid spills.",
+    "history": "Saucers have been used since the 17th century, often paired with teacups in European cultures.",
+    "category": "Tableware"
+  },
+  {
+    "title": "Mug",
+    "description": "A large, sturdy cup with a handle, used for drinking hot beverages.",
+    "image": "./images/tlelab/mug.png",
+    "howtouse": "1. Hold the mug by its handle to enjoy your drink without burning your fingers.",
+    "cautions": "Avoid using in a microwave if the mug has metallic decorations.",
+    "history": "Mugs have been in use for thousands of years, evolving from simple pottery to modern designs.",
+    "category": "Tableware"
+  },
+  {
+    "title": "Glass Bottle",
+    "description": "A container with a narrow neck, used for storing liquids.",
+    "image": "./images/tlelab/glass bottle.png",
+    "howtouse": "1. Use the glass bottle to store and serve liquids like water, juices or homemade beverages.",
+    "cautions": "Glass bottles can break easily when dropped; handle with care.",
+    "history": "Glass bottles date back to around 1500 BCE, first used by ancient Egyptians, becoming more common in Europe by the 17th century.",
+    "category": "Storage"
+  },
+  {
+    "title": "Fork",
+    "description": "A utensil with multiple prongs, used for eating, holding, or picking up food.",
+    "image": "./images/tlelab/fork.png",
+    "howtouse": "1. Grip the fork by its handle to pierce and lift food items.",
+    "cautions": "Be mindful of the prongs as they can cause injury.",
+    "history": "The fork originated in ancient civilizations and became more widely used in Europe during the Middle Ages.",
+    "category": "Tableware"
+  },
+  {
+    "title": "Spoon",
+    "description": "A rounded utensil with a bowl-like end, used for eating or scooping food.",
+    "image": "./images/tlelab/spoon.png",
+    "howtouse": "1. Hold the spoon by the handle to scoop liquid or semi-liquid foods, such as soups.",
+    "cautions": "Metal spoons can become hot with hot foods; use caution to prevent burns.",
+    "history": "Spoons are one of the oldest utensils, dating back to ancient Egypt around 1000 BCE.",
+    "category": "Tableware"
+  },
+  {
+    "title": "Dinner Plate",
+    "description": "A large, flat plate used for serving main meals.",
+    "image": "./images/tlelab/dinner plate.png",
+    "howtouse": "1. Arrange your meal on the dinner plate by placing larger portions in the center and smaller sides around it.",
+    "cautions": "Avoid sudden temperature changes to prevent cracking.",
+    "history": "Dinner plates have transitioned from simple clay to fine china and porcelain over thousands of years.",
+    "category": "Tableware"
+  },
+  {
+    "title": "Soup Spoon",
+    "description": "A spoon designed specifically for eating soups and broths.",
+    "image": "./images/tlelab/soup spoon.png",
+    "howtouse": "1. Use the soup spoon for sipping or scooping up liquids like soup.",
+    "cautions": "Do not use with hard objects as it may damage the spoon.",
+    "history": "Soup spoons were popularized in Europe during the 17th century as soups became a staple.",
+    "category": "Tableware"
+  },
+  {
+    "title": "Ceramic Bowl",
+    "description": "A ceramic bowl adds elegance to any dining table, ideal for serving salads or soups.",
+    "image": "./images/tlelab/ceramic bowl.png",
+    "howtouse": "1. Use for serving smaller portions of food like salads.<br>2. Its sturdy design accommodates both hot and cold dishes.",
+    "cautions": "Avoid using very hot foods to prevent uneven heating.",
+    "history": "Ceramic bowls have been used since ancient times, evolving in design and glazes.",
+    "category": "Tableware"
+  },
+  {
+    "title": "Pasta Ladle",
+    "description": "A specialized tool designed to scoop and serve pasta.",
+    "image": "./images/tlelab/pasta ladle.png",
+    "howtouse": "1. Lift and drain pasta from boiling water using the slotted design to let water drain away.",
+    "cautions": "Be careful not to burn yourself with hot water.",
+    "history": "The pasta ladle emerged as pasta became popular in Italy and other Mediterranean regions.",
+    "category": "Cooking Tools"
+  },
+  {
+    "title": "Sandok",
+    "description": "A traditional wooden spoon used for serving or stirring food in large pots.",
+    "image": "./images/tlelab/sandok.png",
+    "howtouse": "1. Hold the sandok by its long handle to serve food like rice from a pot.",
+    "cautions": "Avoid using sharp objects to preserve its surface.",
+    "history": "The sandok has been used in Filipino households for centuries, reflecting the importance of rice in the local diet.",
+    "category": "Cooking Tools"
+  },
+  {
+    "title": "Skimmer",
+    "description": "A kitchen tool for removing solid ingredients from hot liquids.",
+    "image": "./images/tlelab/skimmer.png",
+    "howtouse": "1. Use the skimmer to scoop out food from boiling liquid, leaving the liquid behind.",
+    "cautions": "Avoid using in very hot oil or boiling water unless heat-resistant.",
+    "history": "Skimmers have been used since the 18th century to remove solid components from liquids.",
+    "category": "Cooking Tools"
+  },
+  {
+    "title": "Soup Ladle",
+    "description": "A deep, long-handled spoon for serving soups, stews, and other liquids.",
+    "image": "./images/tlelab/soup ladle.png",
+    "howtouse": "1. Hold the handle to scoop and serve portions from pots into bowls.",
+    "cautions": "Avoid using with excessively hot soup with long exposure to prevent burns.",
+    "history": "Ladles date back to the Middle Ages for serving soups; traditionally made of wood or metal.",
+    "category": "Serving Tools"
+  },
+  {
+    "title": "Wooden Spatula",
+    "description": "A versatile cooking tool used for stirring, flipping, and scraping food.",
+    "image": "./images/tlelab/wooden spatula.png",
+    "howtouse": "1. Grip and use the wooden spatula to stir or flip food while cooking.",
+    "cautions": "Avoid soaking in water to prevent warping.",
+    "history": "Wooden spatulas have been used for centuries, particularly in European kitchens.",
+    "category": "Cooking Tools"
+  },
+  {
+    "title": "Wooden Spoon",
+    "description": "A classic kitchen utensil known for its strength and versatility.",
+    "image": "./images/tlelab/wooden spoon.png",
+    "howtouse": "1. Stir or mix ingredients using the robust handle and round bowl.",
+    "cautions": "Avoid using on very hot pans to prevent burns.",
+    "history": "Wooden spoons date back to ancient times, with evidence in Egyptian and Roman sites.",
+    "category": "Cooking Tools"
+  }
+] 

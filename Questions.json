@@ -1,0 +1,272 @@
+[
+    {
+        "question": "What type of lamp is commonly used in laboratories for heating and combustion, typically containing a wick that burns alcohol?",
+        "options": ["Beaker", "Alcohol Lamp", "Bunsen Burner", "Crucible"],
+        "answer": "Alcohol Lamp"
+    },
+    {
+        "question": "Which laboratory container, known for its cylindrical shape, is primarily used for mixing and heating liquids and often includes graduated markings?",
+        "options": ["Florence Flask", "Erlenmeyer Flask", "Test Tube", "Beaker"],
+        "answer": "Beaker"
+    },
+    {
+        "question": "What is the name of the laboratory tool that produces a single open flame, adjustable for intensity and color, typically used for heating and sterilization?",
+        "options": ["Alcohol Lamp", "Bunsen Burner", "Hot Plate", "Crucible"],
+        "answer": "Bunsen Burner"
+    },
+    {
+        "question": "Which small, heat-resistant container is used in labs to heat chemical compounds to very high temperatures and often comes with a cover?",
+        "options": ["Beaker", "Crucible with Cover", "Erlenmeyer Flask", "Volumetric Flask"],
+        "answer": "Crucible with Cover"
+    },
+    {
+        "question": "What laboratory flask has a distinctive rounded body and narrow neck, primarily used for heating, boiling, and distilling liquids?",
+        "options": ["Erlenmeyer Flask", "Florence Flask", "Graduated Cylinder", "Test Tube"],
+        "answer": "Florence Flask"
+    },
+    {
+        "question": "Which type of flask, with its conical shape and narrow neck, is particularly useful for safely mixing and heating solutions without spillage?",
+        "options": ["Erlenmeyer Flask", "Florence Flask", "Graduated Cylinder", "Volumetric Flask"],
+        "answer": "Erlenmeyer Flask"
+    },
+    {
+        "question": "What instrument is a narrow, calibrated tube specifically designed for transferring small volumes of liquid with precision?",
+        "options": ["Glass Pipette", "Measuring Cup", "Graduated Cylinder", "Beaker"],
+        "answer": "Glass Pipette"
+    },
+    {
+        "question": "What apparatus is used to accurately measure liquid volumes and is marked with precise measurements?",
+        "options": ["Graduated Cylinder", "Bunsen Burner", "Test Tube", "Crucible"],
+        "answer": "Graduated Cylinder"
+    },
+    {
+        "question": "Which device is used to observe microscopic specimens, utilizing a combination of lenses to magnify small details?",
+        "options": ["Bunsen Burner", "Microscope", "Pipette", "Glove"],
+        "answer": "Microscope"
+    },
+    {
+        "question": "What is the purpose of a watch glass, which is a shallow, concave glass dish in laboratory settings?",
+        "options": ["Holding liquids", "Evaporating samples", "Lid for beakers", "All of the above"],
+        "answer": "All of the above"
+    },
+    {
+        "question": "What tool is commonly used in laboratories for grinding and mixing substances, consisting of a bowl and a club-shaped tool?",
+        "options": ["Mortar and Pestle", "Bunsen Burner", "Evaporating Dish", "Crucible"],
+        "answer": "Mortar and Pestle"
+    },
+    {
+        "question": "Which model assists in visualizing the stages of meiosis in animals, designed for educational purposes in biology?",
+        "options": ["Animal Meiosis Model", "Human Reproductive Model", "Mitochondria Model", "Human Ear Model"],
+        "answer": "Animal Meiosis Model"
+    },
+    {
+        "question": "What is a common use of a specimen container in laboratory settings?",
+        "options": ["Holding chemicals", "Transportation of samples", "Storing equipment", "Measuring lengths"],
+        "answer": "Transportation of samples"
+    },
+    {
+        "question": "What device allows scientists to measure elapsed time accurately and is used in various settings such as sports and lab experiments?",
+        "options": ["Stopwatch", "Timer", "Clock", "Chronometer"],
+        "answer": "Stopwatch"
+    },
+    {
+        "question": "What type of safety eyewear is essential for protecting the eyes from chemical splashes and harmful light in laboratories?",
+        "options": ["Goggles", "Glasses", "Masks", "Face shields"],
+        "answer": "Goggles"
+    },
+    {
+        "question": "Which structure in plant cells is responsible for photosynthesis and contains thylakoids and stroma?",
+        "options": ["Chloroplast", "Mitochondria", "Nucleus", "Cell Wall"],
+        "answer": "Chloroplast"
+    },
+    {
+        "question": "The human respiratory system model illustrates which of the following components?",
+        "options": ["Brain", "Trachea", "Heart", "Stomach"],
+        "answer": "Trachea"
+    },
+    {
+        "question": "Which model represents both male and female reproductive organs and is used for educational discussions about human anatomy?",
+        "options": ["Reproductive System Model", "Circulatory System Model", "Digestive System Model", "Nervous System Model"],
+        "answer": "Reproductive System Model"
+    },
+    {
+        "question": "What early tool for measuring temperature often contained mercury or alcohol and is critical in laboratory settings?",
+        "options": ["Barometer", "Thermometer", "Anemometer", "Sphygmomanometer"],
+        "answer": "Thermometer"
+    },
+    {
+        "question": "What type of laboratory tool consists of three sliding weights on a beam for accurately measuring mass?",
+        "options": ["Triple Beam Balance", "Digital Scale", "Pan Scale", "Graduated Cylinder"],
+        "answer": "Triple Beam Balance"
+    },
+    {
+        "question": "Which model illustrates the various stages of human embryonic development and is crucial in biology studies?",
+        "options": ["Human Embryo Model", "Mitochondria Model", "Prostate Model", "Skeletal Model"],
+        "answer": "Human Embryo Model"
+    },
+    {
+        "question": "What laboratory equipment can enhance precision when mixing and measuring liquids and is essential in both culinary and scientific fields?",
+        "options": ["Measuring Cups", "Beakers", "Flasks", "Test Tubes"],
+        "answer": "Measuring Cups"
+    },
+    {
+        "question": "What is the primary function of a protractor in geometry and drafting tasks?",
+        "options": ["Measuring angles", "Drawing straight lines", "Calculating areas", "Creating graphs"],
+        "answer": "Measuring angles"
+    },
+    {
+        "question": "Which device is often used to hold and secure multiple test tubes during laboratory experiments?",
+        "options": ["Test Tube Rack", "Beaker", "Graduated Cylinder", "Flask"],
+        "answer": "Test Tube Rack"
+    },
+    {
+        "question": "The anatomical fish model highlights what type of systems within its structure for educational purposes?",
+        "options": ["Respiratory and Digestive", "Circulatory and Nervous", "Digestive and Reproductive", "All of the above"],
+        "answer": "All of the above"
+    },
+    {
+        "question": "What type of glassware is specifically designed to hold chemicals safely during reactions and typically features an airtight seal?",
+        "options": ["Reagent Bottle", "Test Tube", "Graduated Cylinder", "Flask"],
+        "answer": "Reagent Bottle"
+    },
+    {
+        "question": "In the context of laboratory safety, what type of gloves should be used to prevent contamination and protect hands from hazards?",
+        "options": ["Latex Gloves", "Nitrile Gloves", "Vinyl Gloves", "All of the above"],
+        "answer": "All of the above"
+    },
+    {
+        "question": "What tool is specifically designed for measuring a substance's ability to conduct electricity in laboratory settings?",
+        "options": ["Multimeter", "Spring Scale", "Electrical Conductivity Apparatus", "Voltmeter"],
+        "answer": "Electrical Conductivity Apparatus"
+    },
+    {
+        "question": "Which model depicts the sequence of stages of human digestion and is an important tool for understanding the digestive process?",
+        "options": ["Digestive System Model", "Respiratory System Model", "Muscular System Model", "Skeletal Model"],
+        "answer": "Digestive System Model"
+    },
+    {
+        "question": "What laboratory equipment, characterized by its low profile and wide surface area, is used to heat solutions while allowing for easy observation?",
+        "options": ["Evaporating Dish", "Graduated Cylinder", "Crucible", "Beaker"],
+        "answer": "Evaporating Dish"
+    },
+    {
+        "question": "Which model represents the important structures involved in the human endocrine system, including glands like the thyroid and adrenal glands?",
+        "options": ["Human Endocrine Model", "Nervous System Model", "Digestive Model", "Reproductive Model"],
+        "answer": "Human Endocrine Model"
+    },
+    {
+        "question": "To properly use a microscope, what needs to be placed on a slide before positioning it under the lens?",
+        "options": ["Liquid", "Tissue Sample", "Dust", "Petri Dish"],
+        "answer": "Tissue Sample"
+    },
+    {
+        "question": "The lunar model in educational settings, which helps illustrate celestial objects' movements, is known as what?",
+        "options": ["Celestial Globe", "Solar System Model", "Lunar Phase Chart", "Earth Orbit Model"],
+        "answer": "Celestial Globe"
+    },
+    {
+        "question": "What is a detailed anatomical replica designed to educate about the male reproductive organs, such as testes and prostate?",
+        "options": ["Male Reproductive System Model", "Frog Dissection Model", "Human Anatomy Model", "Animal Meiosis Model"],
+        "answer": "Male Reproductive System Model"
+    },
+    {
+        "question": "What device allows for the accurate and precise measurement of various lengths and typically features a flexible tape?",
+        "options": ["Meter Stick", "Ruler", "Protractor", "Caliper"],
+        "answer": "Meter Stick"
+    },
+    {
+        "question": "Which smaller, portable device simulates volcanic eruptions to help learners understand geological concepts?",
+        "options": ["Test Tube", "Volcanic Model", "Crucible", "Bunsen Burner"],
+        "answer": "Volcanic Model"
+    },
+    {
+        "question": "What laboratory model assists students in understanding the important process of photosynthesis through the representation of chloroplasts?",
+        "options": ["Plant Cell Model", "Chloroplast Model", "Animal Cell Model", "Human Anatomy Model"],
+        "answer": "Chloroplast Model"
+    },
+    {
+        "question": "Which model demonstrates the intricate structure of mitochondria, which are crucial for cellular energy production?",
+        "options": ["Cellular Model", "Mitochondria Model", "Chloroplast Model", "DNA Model"],
+        "answer": "Mitochondria Model"
+    },
+    {
+        "question": "What is the primary function of the alcohol lamp in laboratories?",
+        "options": ["Lighting experiments", "Heating substances", "Measuring volumes", "Holding samples"],
+        "answer": "Heating substances"
+    },
+    {
+        "question": "When handling a beaker, what safety precaution should you take to avoid burns?",
+        "options": ["Use gloves", "Wash hands", "Hold with bare hands", "Use tongs"],
+        "answer": "Use tongs"
+    },
+    {
+        "question": "What feature of a Bunsen burner allows you to control the flame’s temperature?",
+        "options": ["Gas valve", "Air control valve", "Flame guard", "Wick"],
+        "answer": "Air control valve"
+    },
+    {
+        "question": "Why is it important to cover a crucible during high-temperature experiments?",
+        "options": ["To prevent spillage", "To regulate airflow", "To speed up reactions", "To cool down quickly"],
+        "answer": "To regulate airflow"
+    },
+    {
+        "question": "What is a common mistake when using a volumetric flask?",
+        "options": ["Underfilling it", "Overfilling it", "Not using a lid", "Using it for mixing"],
+        "answer": "Overfilling it"
+    },
+    {
+        "question": "In what way can a graduated cylinder improve measurement accuracy?",
+        "options": ["Using a wide mouth", "Having clear markings", "Being made from glass", "Being larger than test tubes"],
+        "answer": "Having clear markings"
+    },
+    {
+        "question": "How do you ensure the microscope is correctly set up for viewing a specimen?",
+        "options": ["Use low power for adjustment", "Keep the light off", "Remove the eyepiece", "Start with a high power lens"],
+        "answer": "Use low power for adjustment"
+    },
+    {
+        "question": "What is the main advantage of using a mortar and pestle in experiments?",
+        "options": ["Mixing liquids", "Grinding solids", "Heating materials", "Measuring volume"],
+        "answer": "Grinding solids"
+    },
+    {
+        "question": "During a lab safety demonstration, what did you notice about the usage of goggles?",
+        "options": ["They are optional", "Only used in chemistry", "Required for all experiments", "Can be shared between students"],
+        "answer": "Required for all experiments"
+    },
+    {
+        "question": "In a biology class, how would you use the human skeleton model?",
+        "options": ["To teach about colors", "To study anatomy", "To create art", "To measure height"],
+        "answer": "To study anatomy"
+    },
+    {
+        "question": "When measuring temperature with a thermometer, why is it important to avoid touching the bulb?",
+        "options": ["To ensure accuracy", "To prevent burns", "To avoid breakage", "To keep it clean"],
+        "answer": "To ensure accuracy"
+    },
+    {
+        "question": "What type of cleaning technique is essential after using reagent bottles?",
+        "options": ["Rinsing only", "Using vigorous scrubbing", "Disposing of them", "Proper sterilization"],
+        "answer": "Proper sterilization"
+    },
+    {
+        "question": "How should an evaporating dish be heated to prevent it from cracking?",
+        "options": ["Rapidly", "Gently", "Directly over a flame", "In a microwave"],
+        "answer": "Gently"
+    },
+    {
+        "question": "What can a plant tissue model help demonstrate in an educational setting?",
+        "options": ["Animal anatomy", "Plant growth processes", "Soil composition", "Water filtration"],
+        "answer": "Plant growth processes"
+    },
+    {
+        "question": "When using a tape measure, what should you do to ensure an accurate reading?",
+        "options": ["Pull it too tight", "Place it on a flat surface", "Mark with pen", "Look from any angle"],
+        "answer": "Place it on a flat surface"
+    },
+    {
+        "question": "How do premium spring balances measure weight?",
+        "options": ["Using a spring mechanism", "By calculating volume", "Through heat detection", "Using electrical signals"],
+        "answer": "Using a spring mechanism"
+    }
+]

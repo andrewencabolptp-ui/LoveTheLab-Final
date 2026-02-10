@@ -1,0 +1,346 @@
+html:[
+    <!-- Points Display -->
+    <div id="points-display">
+        <h2><span id="points">0</span></h2>
+    </div>
+],
+
+js:[
+    // Initialize points
+    let points = localStorage.getItem('points') ? parseInt(localStorage.getItem('points')) : 0;
+
+    // Get the points display element
+    const pointsDisplay = document.getElementById('points');
+
+    // Function to update points
+    const updatePoints = (amount) => {
+            points += amount; // Increase points by the given amount
+            pointsDisplay.textContent = points; // Update points display
+            localStorage.setItem('points', points); // Save points to localStorage
+    };
+
+    // Load initial points into the display
+    pointsDisplay.textContent = points;
+
+    // Example: Increase points when the Science button is clicked
+    document.getElementById('to-science-menu-button').addEventListener('click', () => {
+            updatePoints(10); // Add 10 points when clicking the Science Lab button
+    });
+
+    // Example: Increase points when the TLE button is clicked
+    document.getElementById('to-tle-menu-button').addEventListener('click', () => {
+            updatePoints(5); // Add 5 points when clicking the TLE Lab button
+    });
+
+    // Example: Increase points when the Computer button is clicked
+    document.getElementById('to-com-menu-button').addEventListener('click', () => {
+            updatePoints(15); // Add 15 points when clicking the Computer Lab button
+    });
+]
+
+js:[
+  // Initialize points
+let points = localStorage.getItem('points') ? parseInt(localStorage.getItem('points')) : 0;
+
+// Get the points display element
+const pointsDisplay = document.getElementById('points');
+
+// Function to update points
+const updatePoints = (amount) => {
+    points += amount; // Increase points by the given amount
+    pointsDisplay.textContent = points; // Update points display
+    localStorage.setItem('points', points); // Save points to localStorage
+};
+
+// Load initial points into the display
+pointsDisplay.textContent = points;
+
+// Example: Increase points when the Science button is clicked
+document.getElementById('to-science-menu-button').addEventListener('click', () => {
+    updatePoints(10); // Add 10 points when clicking the Science Lab button
+});
+
+// Example: Increase points when the TLE button is clicked
+document.getElementById('to-tle-menu-button').addEventListener('click', () => {
+    updatePoints(5); // Add 5 points when clicking the TLE Lab button
+});
+
+// Example: Increase points when the Computer button is clicked
+document.getElementById('to-com-menu-button').addEventListener('click', () => {
+    updatePoints(15); // Add 15 points when clicking the Computer Lab button
+});
+
+]
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const homePage = document.getElementById("home-page");
+  const ScienceMenu = document.getElementById("science-menu");
+  const ScienceCatalog = document.getElementById("science-catalog");
+  const ScienceDetails = document.getElementById("science-details");
+  const ScienceCatalogContainer = document.getElementById("science-container");
+  const equipmentDetails = document.getElementById("equipment-details");
+  const ScienceFavorites = document.getElementById("science-favorite");
+  const searchInput = document.getElementById("science-search-bar");
+  const sorter = document.getElementById("abcsorter");
+  const categorySorter = document.getElementById("category-sorter");
+  const favoritesContainer = document.getElementById("favorites-container");
+  const AboutUs = document.getElementById("about-us");
+
+  const experimentCatalog = document.getElementById("experiment-catalog");
+  const experimentSearchInput = document.getElementById("experiment-search-bar");
+  const experimentSorter = document.getElementById("experiment-sorter");
+  const experimentCategorySorter = document.getElementById("experiment-category-sorter");
+
+  let equipmentData = [];
+  let experimentData = [];
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+  var click2 = new Audio("./audio/click2.wav");
+
+  loadEquipCatalog();
+  loadExpeCatalog();
+
+  // Navigation event listeners
+  document.getElementById("to-science-menu-button").addEventListener("click", () => {
+      click2.play();
+      homePage.style.display = "none";
+      ScienceMenu.style.display = "block";
+  });
+
+  document.getElementById("to-about-us-button").addEventListener("click", () => {
+      click2.play();
+      homePage.style.display = "none";
+      AboutUs.style.display = "block";
+  });
+
+  // Navigate to the equipment catalog
+  document.getElementById("to-science-button").addEventListener("click", () => {
+      ScienceMenu.style.display = "none";
+      ScienceCatalog.style.display = "block";
+      resetSearchAndSort();  // Reset search for equipment
+      loadEquipCatalog();
+  });
+
+  // Navigate to the experiments catalog
+  document.getElementById("to-scienceexp-button").addEventListener("click", () => {
+      ScienceMenu.style.display = "none";
+      experimentCatalog.style.display = "block";
+      resetExperimentSearchAndSort();  // Reset search for experiments
+      loadExpeCatalog();
+  });
+
+  document.getElementById("science-b-menu-to-home").addEventListener("click", () => {
+      ScienceMenu.style.display = "none";
+      homePage.style.display = "block";
+  });
+
+  document.getElementById("science-b-catalog-to-menu").addEventListener("click", () => {
+      ScienceCatalog.style.display = "none";
+      ScienceMenu.style.display = "block";
+  });
+
+  document.getElementById("experiment-b-catalog-to-menu").addEventListener("click", () => {
+      experimentCatalog.style.display = "none";
+      ScienceMenu.style.display = "block";
+  });
+
+  // Load equipment catalog data
+  async function loadEquipCatalog() {
+      try {
+          const response = await fetch("./json/sciequipments.json?nocache=" + new Date().getTime());
+          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+          equipmentData = await response.json();
+          populateCategorySorter(equipmentData, categorySorter);
+          displayCatalog(equipmentData, ScienceCatalogContainer, equipmentDetails, favorites);
+      } catch (error) {
+          console.error("Error loading equipment catalog data:", error);
+          ScienceCatalogContainer.innerHTML = "<p>Error loading catalog data. Please try again later.</p>";
+      }
+  }
+
+  // Load experiment catalog data
+  async function loadExpeCatalog() {
+      try {
+          const response = await fetch("./json/sciexperiments.json?nocache=" + new Date().getTime());
+          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+          experimentData = await response.json();
+          populateCategorySorter(experimentData, experimentCategorySorter);
+          displayCatalog(experimentData, experimentCatalog, equipmentDetails, favorites);
+      } catch (error) {
+          console.error("Error loading experiment catalog data:", error);
+          experimentCatalog.innerHTML = "<p>Error loading catalog data. Please try again later.</p>";
+      }
+  }
+
+  function populateCategorySorter(data, sorterElement) {
+      const categories = new Set(data.map(item => item.category));
+      const sortedCategories = Array.from(categories).sort();
+
+      sorterElement.innerHTML = '<option value="all">All</option>';
+      sortedCategories.forEach(category => {
+          const option = document.createElement("option");
+          option.value = category;
+          option.textContent = category;
+          sorterElement.appendChild(option);
+      });
+  }
+
+  function getFilteredAndSortedData(data, searchInput, sorter, categorySorter) {
+      const searchTerm = searchInput.value.toLowerCase();
+      const selectedCategory = categorySorter.value;
+
+      // Filter
+      let filteredData = data.filter(item => {
+          return (!searchTerm || item.title.toLowerCase().includes(searchTerm)) &&
+                 (selectedCategory === "all" || item.category === selectedCategory);
+      });
+
+      // Sort
+      const sortOrder = sorter.value;
+      filteredData.sort((a, b) => {
+          return sortOrder === "asc" ? a.title.localeCompare(b.title) : b.title.localeCompare(a.title);
+      });
+
+      return filteredData;
+  }
+
+  function displayCatalog(data, catalogContainer, detailsContainer, favorites) {
+      const dataToDisplay = getFilteredAndSortedData(data, searchInput, sorter, categorySorter);
+      catalogContainer.innerHTML = "";
+
+      if (dataToDisplay.length === 0) {
+          catalogContainer.innerHTML = "<p>No items found.</p>";
+          return;
+      }
+
+      dataToDisplay.forEach(item => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("item");
+
+          const img = document.createElement("img");
+          img.src = item.image || ''; // Use a placeholder if no image provided
+          img.alt = item.title;
+
+          const h2 = document.createElement("h2");
+          h2.textContent = item.title;
+
+          // Favorite star icon
+          const favButton = document.createElement("span");
+          const isFavorite = favorites.includes(item.title);
+          favButton.innerHTML = isFavorite ? "★" : "☆";
+          favButton.style.color = isFavorite ? "gold" : "gray";
+          favButton.classList.add("fav-button");
+
+          favButton.addEventListener("click", (e) => {
+              e.stopPropagation();
+              toggleFavorite(item.title);
+              favButton.innerHTML = favorites.includes(item.title) ? "★" : "☆";
+              favButton.style.color = favorites.includes(item.title) ? "gold" : "gray";
+              showNotification(favorites.includes(item.title) ? "Bookmarked!" : "Removed from Bookmarks.");
+          });
+
+          // Append everything to the itemDiv
+          itemDiv.appendChild(img);
+          itemDiv.appendChild(h2);
+          itemDiv.appendChild(favButton);
+          catalogContainer.appendChild(itemDiv);
+
+          // Open item details on click
+          itemDiv.addEventListener("click", () => showDetails(item, detailsContainer));
+      });
+  }
+
+  function showDetails(item, detailsContainer) {
+      detailsContainer.style.display = "block";
+      
+      // Clear previous content
+      detailsContainer.innerHTML = ""; 
+      
+      const titleContainer = document.createElement("div");
+      titleContainer.classList.add("title-container");
+
+      const title = document.createElement("h2");
+      title.textContent = item.title;
+
+      const isFavorite = favorites.includes(item.title);
+      const favButton = document.createElement("span");
+      favButton.innerHTML = isFavorite ? "★" : "☆";
+      favButton.classList.add("fav-button");
+      favButton.style.color = isFavorite ? "gold" : "gray";
+
+      favButton.addEventListener("click", (e) => {
+          e.stopPropagation();
+          toggleFavorite(item.title);
+          const nowFavorite = favorites.includes(item.title);
+          favButton.innerHTML = nowFavorite ? "★" : "☆";
+          favButton.style.color = nowFavorite ? "gold" : "gray";
+          showNotification(nowFavorite ? "Bookmarked!" : "Removed from bookmarks.");
+      });
+
+      titleContainer.appendChild(title);
+      titleContainer.appendChild(favButton);
+
+      // Details content
+      detailsContainer.innerHTML = `
+          <img src="${item.image}" alt="${item.title}">
+          <p><b>Description:</b> ${item.description}</p>
+          <p><b>How to Use:</b> ${item.howtouse}</p>
+          <p><b>Cautions:</b> ${item.cautions}</p>
+          <p><b>History:</b> ${item.history}</p>
+      `;
+      detailsContainer.prepend(titleContainer);
+  }
+
+  function toggleFavorite(itemTitle) {
+      const index = favorites.indexOf(itemTitle);
+      if (index === -1) {
+          favorites.push(itemTitle);
+      } else {
+          favorites.splice(index, 1);
+      }
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+  }
+
+  function showNotification(message) {
+      const notification = document.createElement("div");
+      notification.classList.add("notification");
+      notification.textContent = message;
+      document.body.appendChild(notification);
+      setTimeout(() => {
+          notification.style.opacity = "0";
+          setTimeout(() => notification.remove(), 500);
+      }, 1500);
+  }
+
+  // Reset search and sorting for experiments
+  function resetExperimentSearchAndSort() {
+      experimentSearchInput.value = "";
+      experimentSorter.value = "asc"; // Reset to ascending
+      experimentCategorySorter.value = "all"; // Reset to all categories
+      displayCatalog(experimentData, experimentCatalog, equipmentDetails, favorites); // Update experiment catalog display
+  }
+
+  function resetSearchAndSort() {
+      searchInput.value = "";
+      sorter.value = "asc"; // Reset to ascending
+      categorySorter.value = "all"; // Reset to all categories
+      displayCatalog(equipmentData, ScienceCatalogContainer, equipmentDetails, favorites); // Update equipment catalog display
+  }
+
+  // Event Listeners for Search and Filter
+  searchInput.addEventListener("input", () => displayCatalog(equipmentData, ScienceCatalogContainer, equipmentDetails, favorites));
+  sorter.addEventListener("change", () => displayCatalog(equipmentData, ScienceCatalogContainer, equipmentDetails, favorites));
+  categorySorter.addEventListener("change", () => displayCatalog(equipmentData, ScienceCatalogContainer, equipmentDetails, favorites));
+
+  experimentSearchInput.addEventListener("input", () => displayCatalog(experimentData, experimentCatalog, equipmentDetails, favorites));
+  experimentSorter.addEventListener("change", () => displayCatalog(experimentData, experimentCatalog, equipmentDetails, favorites));
+  experimentCategorySorter.addEventListener("change", () => displayCatalog(experimentData, experimentCatalog, equipmentDetails, favorites));
+}); 

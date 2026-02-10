@@ -1,0 +1,130 @@
+{
+  "experiments": [
+    {
+      "title": "Elephant Toothpaste",
+      "objectives": [
+        "To observe a rapid exothermic reaction.",
+        "To understand the role of a catalyst in speeding up a chemical reaction.",
+        "To learn about the decomposition of hydrogen peroxide."
+      ],
+      "materials": [
+        "Graduated cylinder",
+        "Large tub or tray to catch the foam, or outdoor location to do the experiment",
+        "Safety goggles",
+        "Measuring cups and spoons",
+        "Dry yeast",
+        "Warm water",
+        "3% hydrogen peroxide",
+        "Liquid dish soap"
+      ],
+      "instructions": [
+        "Pour 1/2 cup of hydrogen peroxide into the bottle. Add a big squirt of dish soap into the graduated cylinder, and swirl gently to mix. If you want to make your foam a single color, add a few drops of food coloring directly into the hydrogen peroxide, and swirl the bottle gently to mix.",
+        "If you want to give your foam stripes like some toothpastes, put the drops along the inside rim of the bottle's mouth. Let them drip down the inside of the bottle, but do not mix. In a measuring cup, mix together 1 tablespoon of yeast and 3 tablespoons of warm water. Stir for about 30 seconds. Pour the yeast mixture into the bottle, then quickly step back and watch your reaction go!"
+      ],
+      "image": [
+        "./image/Image40.png",
+        "./image/Image41.png"
+      ],
+      "guide_questions": [
+        "What caused the foam to form?",
+        "What is the role of the yeast?",
+        "Why is this reaction exothermic?",
+        "What safety precautions should be taken when performing this experiment?",
+        "What would happen if you used a higher concentration of hydrogen peroxide?"
+      ],
+      "reference": "https://www.sciencebuddies.org/stem-activities/elephant-toothpaste"
+    },
+    {
+      "title": "Lava Lamp Experiment",
+      "objectives": [
+        "To understand the concept of liquid density and how gas bubbles move through different substances.",
+        "To simulate the movement of magma in the earth’s mantle."
+      ],
+      "materials": [
+        "Erlenmeyer flask",
+        "Measuring cups and spoons",
+        "Funnel",
+        "Water",
+        "Cooking oil (vegetable or baby oil)",
+        "Food coloring (any color)",
+        "Effervescent tablets (Alka-Seltzer or vitamin C tablet)"
+      ],
+      "instructions": [
+        "Fill the Erlenmeyer flask ¼ full with water. Slowly pour cooking oil into the bottle until it is almost full. Wait a few minutes for the oil to separate from the water.",
+        "Add a few drops of food coloring (it will pass through the oil and mix with the water). Drop an effervescent tablet into the bottle and observe the bubbles rising. Watch how the bubbles carry the colored water upwards before sinking back down."
+      ],
+      "image": [
+        "./image/Image37.png",
+        "./image/Image38.png"
+      ],
+      "guide_questions": [
+        "Why do oil and water separate instead of mixing?",
+        "What happens when the effervescent tablet is added?",
+        "How does this experiment model the movement of magma in the earth’s mantle?",
+        "What would happen if you used a different liquid instead of oil?",
+        "How does the size of the tablet affect the intensity of the reaction?"
+      ],
+      "reference": "Chang, R. (2016). Chemistry. McGraw-Hill Education."
+    },
+    {
+      "title": "Rainbow in a Glass Experiment",
+      "objectives": [
+        "To understand the concept of liquid density and how it affects layering.",
+        "To explore how sugar concentration affects the density of a liquid."
+      ],
+      "materials": [
+        "Tall, clear glass",
+        "Water",
+        "Food coloring (various colors)",
+        "Sugar",
+        "Measuring spoons",
+        "Spoon for stirring",
+        "Pipette or dropper"
+      ],
+      "instructions": [
+        "Fill four separate cups with equal amounts of water. Add different amounts of sugar to each cup (e.g., 0 tsp, 1 tsp, 2 tsp, and 3 tsp). Stir each solution until the sugar is fully dissolved.",
+        "Add a few drops of different food coloring to each solution. Using a pipette or dropper, carefully layer the solutions in a tall glass, starting with the one that has the most sugar at the bottom and ending with the one with no sugar on top."
+      ],
+      "image": [
+        "./image/Image39.png",
+        "./image/Image42.png"
+      ],
+      "guide_questions": [
+        "Why do the layers stay separate instead of mixing?",
+        "How does sugar concentration affect liquid density?",
+        "What happens if you stir the layers together?",
+        "Can you add more layers using different concentrations of sugar?"
+      ],
+      "reference": "https://www.sciencebuddies.org/stem-activities/rainbow-density-experiment"
+    },
+    {
+      "title": "Flame Test Experiment",
+      "objectives": [
+        "To observe the emission spectrum of different metal ions.",
+        "To understand how different elements emit different colors when heated."
+      ],
+      "materials": [
+        "Bunsen burner or candle",
+        "Metal salts (e.g., sodium chloride, potassium chloride, copper sulfate, calcium chloride, lithium chloride)",
+        "Wooden splints or cotton swabs",
+        "Ethanol or distilled water",
+        "Safety goggles and gloves"
+      ],
+      "instructions": [
+        "Soak the wooden splints or cotton swabs in distilled water or ethanol. Dip the soaked end into a metal salt sample.",
+        "Hold the splint in the flame and observe the color change. Repeat for different metal salts and note the colors observed."
+      ],
+      "image": [
+        "./image/Image43.png",
+        "./image/Image44.png"
+      ],
+      "guide_questions": [
+        "Why do different metals produce different flame colors?",
+        "What role do electrons play in this experiment?",
+        "How can this experiment be used in forensic science or chemistry labs?",
+        "What safety precautions should be taken when performing this experiment?"
+      ],
+      "reference": "https://www.sciencebuddies.org/stem-activities/flame-test-experiment"
+    }
+  ]
+}
