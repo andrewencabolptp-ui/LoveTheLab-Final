@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love the Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<link rel="manifest"
+href="manifest.json">
+<meta name="theme-color"
+content="#4CAF50">
+
+<!-- First Page - Only Logo and Button -->
+<div class="container" id="home-page">
+  <div class="content">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="Logo" id="logo">
+    </div>
+    <!-- Button -->
+    <div class="home-button-container">
+      <button class="card" id="to-science-menu-button">
+        <h1>Science Lab</h1>
+        <p> Explore the equipments and experiments in the Science Laboratory. </p>
+      </button>
+      <button class="card" id="to-tle-menu-button">
+        <h1>TLE Lab</h1>
+        <p> Cook with no hesitation once you are familiar with tools and recipes. </p>
+      </button>
+      <button class="card" id="to-Com-menu-button">
+        <h1>Computer Lab</h1>
+        <p> Click with no doubt and learn in the world of technology. </p>
+      </button>
+    </div>
+    <div class="home-button2-container">
+      <button id="to-about-us-button">About Us</button>
+      <button title="filter" class="filter" id="to-settings-button">
+        <svg viewBox="0 0 512 512" height="1em">
+          <path
+            d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Second Page - Science Laboratory -->
+<section id="science-menu" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo" id="logo-science">
+    </div>
+    <div class="title-container">
+      <h1>Science Laboratory Menu</h1>
+    </div>
+  </header>
+  <div class="menu-button-container">
+    <button class="card2" id="to-science-button">
+      <h1>Equipments</h1>
+    </button>
+    <button class="card2" id="to-scienceexp-button" style="display: none;">
+      <h1>Experiments</h1>
+    </button>
+    <div></div>
+    <button class="card3" id="science-to-fav">
+      <h1>Bookmarks</h1>
+      <p>Here are your favorite equipments.</p>
+    </button>
+    <button class="card3" id="to-science-game-button">
+      <h1>Quiz</h1>
+      <p>Here are your favorite equipments.</p>
+    </button>
+  </div>
+  <button id="science-b-menu-to-home">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section>
+
+<!-- Third Page - Science Catalog - Equipments -->
+<section id="science-catalog" style="display: none;">
+  <header id="main-header">
+    <div class="title-container">
+      <h1>Science Laboratory</h1>
+    </div>
+    <div class="search-sort-container">
+      <input type="text" placeholder="Search Equipment..." class="search-bar" id="science-search-bar">
+      <select class="sorter" id="abcsorter">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+      <select id="category-sorter"></select> <!-- This must match the JavaScript -->
+    </div>
+  </header>
+  <div id="science-container" class="catalog-list"> </div>
+  <button id="science-b-catalog-to-menu">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+  <div id="sciquiz-container" style="display: none;">
+    <header id="main-header">
+      <div class="title-container">
+        <h1>Science Quiz</h1>
+      </div>
+    </header>
+    <div id="sciquiz-content">
+      <div id="sciquiz-question"></div>
+      <div id="sciquiz-options"></div>
+      <div id="sciquiz-buttons">
+        <button id="sciquiz-next-button" disabled>Next</button>
+        <button id="sciquiz-exit-button">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+            <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="sciquiz-score"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Fifth Page (Details) -->
+<section id="science-details" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo" id="logo-details">
+    </div>
+    <div class="title-container">
+      <h1>Equipment Details</h1>
+    </div>
+  </header>
+  
+  <div id="equipment-details" class="details"></div>
+  <button id="science-b-details-to-catalog">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+      </svg>
+  </button>
+</section>
+
+<!-- Fourth Page - Science Catalog - Experiments -->
+<section id="experiment-catalog" style="display: none;">
+  <header id="main-header">
+    <div class="title-container">
+      <h1>Experiments Catalog</h1>
+    </div>
+  </header>
+  <div id="experiment-container" class="catalog-list"></div>
+  <button id="experiment-b-expcatalog-to-menu">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section>
+
+<!-- Fifth Page (Details) Experiments -->
+<section id="science-experiment-details" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo" id="logo-details">
+    </div>
+    <div class="title-container">
+      <h1>Experiment</h1>
+    </div>
+  </header>
+  
+  <div id="experiment-details" class="details"></div>
+  <button id="science-b-expdetails-to-catalog">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+      </svg>
+  </button>
+</section>
+
+
+<!-- Fifth Page - Science Favorites -->
+<section id="science-favorite" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo">
+    </div>
+    <div class="title-container">
+      <h1>Science Favorites</h1>
+    </div>
+  </header>
+  <p></p>
+  <div id="favorites-container" class="catalog-list"></div>
+  <button id="science-b-fav-to-home">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section> 
+
+
+
+<!-- Second Page - TLE Laboratory -->
+<section id="tle-menu" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo" id="logo-science">
+    </div>
+    <div class="title-container">
+      <h1>TLE Laboratory Menu</h1>
+    </div>
+  </header>
+  <div class="menu-button-container">
+    <button class="card2" id="to-tle-button">
+      <h1>Equipments</h1>
+    </button>
+    <div></div>
+    <button class="card3" id="tle-to-fav">
+      <h1>Bookmarks</h1>
+      <p>Here are your favorite equipments.</p>
+    </button>
+    <button class="card3" id="to-tle-game-button">
+      <h1>Quiz</h1>
+      <p>Here are your favorite equipments.</p>
+    </button>
+  </div>
+  <button id="tle-b-menu-to-home">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section>
+
+<!-- Third Page - TLE Catalog - Equipments -->
+<section id="tle-catalog" style="display: none;">
+  <header id="main-header">
+    <div class="title-container" id="title-container">
+      <h1>TLE Laboratory</h1>
+    </div>
+    <div class="search-sort-container">
+      <input type="text" placeholder="Search Equipment..." class="search-bar" id="tle-search-bar">
+      <select class="sorter" id="tle-abcsorter">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+      <select id="tle-category-sorter"></select> <!-- This must match the JavaScript -->
+    </div>
+  </header>
+  <div id="TLE-container" class="catalog-list">
+    <svg width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    </svg>
+  </div>
+  <button id="tle-b-to-menu">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section>
+
+<!-- Fifth Page (Details) -->
+<section id="tle-details" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo" id="logo-details">
+    </div>
+    <div class="title-container">
+      <h1>Equipment Details</h1>
+    </div>
+  </header>
+  
+  <div id="tleequipment-details" class="details"></div>
+  <button id="tle-b-details-to-catalog">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+      </svg>
+  </button>
+</section>
+
+
+<!-- Fifth Page - TLE Favorites -->
+<section id="TLE-favorite" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo">
+    </div>
+    <div class="title-container">
+      <h1>TLE Favorites</h1>
+    </div>
+  </header>
+  <p></p>
+  <div id="tle-favorites-container" class="catalog-list"></div>
+  <button id="tle-b-fav-to-home">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section> 
+
+
+
+
+
+<!-- Second Page - Com Laboratory -->
+<section id="Com-menu" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo" id="logo-science">
+    </div>
+    <div class="title-container">
+      <h1>Com Laboratory Menu</h1>
+    </div>
+  </header>
+  <div class="menu-button-container">
+    <button class="card2" id="to-Com-button">
+      <h1>Equipments</h1>
+    </button>
+    <div></div>
+    <button class="card3" id="Com-to-fav">
+      <h1>Bookmarks</h1>
+      <p>Here are your favorite equipments.</p>
+    </button>
+    <button class="card3" id="to-Com-game-button">
+      <h1>Quiz</h1>
+      <p>Here are your favorite equipments.</p>
+    </button>
+  </div>
+  <button id="Com-b-menu-to-home">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section>
+
+<!-- Third Page - Com Catalog - Equipments -->
+<section id="Com-catalog" style="display: none;">
+  <header id="main-header">
+    <div class="title-container" id="title-container">
+      <h1>Com Laboratory</h1>
+    </div>
+    <div class="search-sort-container">
+      <input type="text" placeholder="Search Equipment..." class="search-bar" id="com-search-bar">
+      <select class="sorter" id="Com-abcsorter">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+      <select id="Com-category-sorter"></select> <!-- This must match the JavaScript -->
+    </div>
+  </header>
+  <div id="Com-container" class="catalog-list">
+    <svg width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    </svg>
+  </div>
+  <button id="Com-b-to-menu">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section>
+
+<!-- Fifth Page (Details) -->
+<section id="Com-details" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo" id="logo-details">
+    </div>
+    <div class="title-container">
+      <h1>Equipment Details</h1>
+    </div>
+  </header>
+  
+  <div id="Comequipment-details" class="details"></div>
+  <button id="Com-b-details-to-catalog">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+      </svg>
+  </button>
+</section>
+
+
+<!-- Fifth Page - Com Favorites -->
+<section id="Com-favorite" style="display: none;">
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Science Equipment Logo">
+    </div>
+    <div class="title-container">
+      <h1>Com Favorites</h1>
+    </div>
+  </header>
+  <p></p>
+  <div id="Com-favorites-container" class="catalog-list"></div>
+  <button id="Com-b-fav-to-home">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</section> 
+
+
+
+
+
+
+
+<!-- Last Page - About Us -->
+<div class="container" id="about-us" style="display: none;">
+  <div class="content">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="Logo" id="logo">
+    </div>
+
+    <div>
+      <p style="text-indent: 10%;"> 
+        <strong>Lab the Love</strong> is a capstone project developed by <strong>Grade 12 Science, Technology, Engineering, and Mathematics Strand Section Quisumbing of Francisco P. Tolentino Integrated High School School Year 2024-2025</strong> to address the challenges students face in understanding and using laboratory equipment safely and effectively. As an offline learning app, it serves as an accessible and user-friendly educational companion that provides clear instructions on equipment functions, safety protocols, and laboratory best practices.  
+      </p> 
+    </div>
+    <div>
+      <p style="text-indent: 10%;"> 
+        Tailored for <strong>Science, TLE, and Computer laboratories</strong>, Lab the Love helps students build confidence in handling lab tools while fostering a culture of curiosity, responsibility, and innovation. Whether you're a beginner learning the basics or an aspiring scientist preparing for advanced experiments, our app ensures you approach every lab activity with knowledge and care.  
+      </p>
+    </div>
+    <div> 
+      <p>
+        With Lab the Love, students can:<br><br>
+        ✅ Explore a detailed catalog of lab equipment<br>
+        ✅ Understand safety guidelines to prevent accidents<br>
+        ✅ Develop practical skills for real-world applications<br>
+      </p>
+    </div>
+    <div>
+      <p style="text-indent: 10%;"> 
+        This project is developed <strong>in partial fulfillment of the requirements for our Capstone</strong>, under the guidance of our adviser, <strong>Mdme. Arrah Khay Casidsid-Soliman</strong>. Our goal is to bridge the knowledge gap and provide a reliable educational tool that supports students, teachers, and schools in creating a <strong>safer and smarter learning environment</strong>.  
+      </p>
+    </div>
+    <div>
+      <p style="text-align: center;"> 
+        Join us in <strong>loving the lab!</strong>
+      </p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/xavierpinedaalcanse"> 
+        <div id="twitter" class="social-btn flex-center">
+          <svg viewBox="0 0 50 50" height="50" width="50"><path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path></svg>
+          <span>/lovethelab</span>
+        </div>
+      </a>
+      <div id="linkedin" class="social-btn flex-center">
+        <svg viewBox="0 0 24 24" height="24" width="24">
+          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
+        </svg>
+        <span>in/lovethelaboratory</span>
+      </div>
+      <div id="github" class="social-btn flex-center">
+        <svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 11.9556C2 8.47078 2 6.7284 2.67818 5.39739C3.27473 4.22661 4.22661 3.27473 5.39739 2.67818C6.7284 2 8.47078 2 11.9556 2H20.0444C23.5292 2 25.2716 2 26.6026 2.67818C27.7734 3.27473 28.7253 4.22661 29.3218 5.39739C30 6.7284 30 8.47078 30 11.9556V20.0444C30 23.5292 30 25.2716 29.3218 26.6026C28.7253 27.7734 27.7734 28.7253 26.6026 29.3218C25.2716 30 23.5292 30 20.0444 30H11.9556C8.47078 30 6.7284 30 5.39739 29.3218C4.22661 28.7253 3.27473 27.7734 2.67818 26.6026C2 25.2716 2 23.5292 2 20.0444V11.9556Z" fill="white"/>
+          <path d="M22.0515 8.52295L16.0644 13.1954L9.94043 8.52295V8.52421L9.94783 8.53053V15.0732L15.9954 19.8466L22.0515 15.2575V8.52295Z" fill="#EA4335"/>
+          <path d="M23.6231 7.38639L22.0508 8.52292V15.2575L26.9983 11.459V9.17074C26.9983 9.17074 26.3978 5.90258 23.6231 7.38639Z" fill="#FBBC05"/>
+          <path d="M22.0508 15.2575V23.9924H25.8428C25.8428 23.9924 26.9219 23.8813 26.9995 22.6513V11.459L22.0508 15.2575Z" fill="#34A853"/>
+          <path d="M9.94811 24.0001V15.0732L9.94043 15.0669L9.94811 24.0001Z" fill="#C5221F"/>
+          <path d="M9.94014 8.52404L8.37646 7.39382C5.60179 5.91001 5 9.17692 5 9.17692V11.4651L9.94014 15.0667V8.52404Z" fill="#C5221F"/>
+          <path d="M9.94043 8.52441V15.0671L9.94811 15.0734V8.53073L9.94043 8.52441Z" fill="#C5221F"/>
+          <path d="M5 11.4668V22.6591C5.07646 23.8904 6.15673 24.0003 6.15673 24.0003H9.94877L9.94014 15.0671L5 11.4668Z" fill="#4285F4"/>
+        </svg>
+        <span>lovethelab</span>
+      </div>
+    </div>
+  </div>
+  <button id="about-to-home">
+    <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+    </svg>
+  </button>
+</div>
+
+  
+<!-- Last Page - Settings Us -->
+<div class="container" id="settings" style="display: none;">
+   <!-- From Uiverse.io by catraco --> 
+   <div class="sound-settings">
+    <header id="main-header">
+      <div class="title-container">
+        <h1>Settings</h1>
+      </div>
+    </header>
+    <label class="SFXcontainer">
+        <div class="label-text"><span>Sound FX</span></div>
+        <input checked="checked" type="checkbox" id="SFXcheckbox">
+        <svg viewBox="0 0 576 512" height="1em" class="mute"><path d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM425 167l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"></path></svg>
+        <svg viewBox="0 0 448 512" height="1em" class="voice"><path d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM412.6 181.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5z"></path></svg>
+    </label>
+    
+    <label class="SFXcontainer">
+        <div class="label-text"><span>Background Music</span></div>
+        <input checked="checked" type="checkbox" id="BGMcheckbox">
+        <svg viewBox="0 0 576 512" height="1em" class="mute"><path d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM425 167l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"></path></svg>
+        <svg viewBox="0 0 448 512" height="1em" class="voice"><path d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM412.6 181.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5z"></path></svg>
+    </label>
+</div>
+     <button id="settings-to-home">
+      <svg class="back-svg" viewBox="0 0 1024 1024" height="1em">
+        <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+      </svg>
+    </button>
+  </div>
+  
+
+
+
+
+<section class="container" id="quiz-section" style="display: none;"> 
+  <header id="main-header">
+    <div class="title-container">
+      <h1>Quiz</h1>
+    </div>
+  </header> 
+  <div id="quiz-container">
+      <div id="question-container"></div>
+      <div id="options-container"></div>
+     <div id="quiz-buttons">
+      <button id="next-button" disabled>Next Question</button>
+      <button id="questions-to-menu"><svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+        <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+    </svg>
+      </button>
+    </div>
+      <div id="score-container"></div>
+  </div>
+</section>
+
+<section id="score-section" style="display: none;"> 
+  <header id="main-header">
+    <div class="title-container">
+      <h1>Quiz Score</h1>
+    </div>
+  </header> 
+<div id="score-container" class="content">
+  <div id="score"></div>
+  <button id="quiz-to-home"><svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+    <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+</svg></button>
+</div>
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
